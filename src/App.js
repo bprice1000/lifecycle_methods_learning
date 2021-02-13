@@ -19,7 +19,7 @@ class App extends React.Component {
     return (
       <div className="buttons">
       <button onClick={() => this.setState(state => ({showChild: !state.showChild}))}>Toggle Lifecycles</button>
-      <button onClick={() => this.setState(state => ({ text: state.text + '<hi>'}))}>Update Text</button>
+      <button onClick={() => this.setState(state => ({ text: state.text + '<hi>' }))}>Update Text</button>
       {this.state.showChild ? <Lifecycles text={this.state.text} /> : null}
       <h6>Open Console to learn</h6>
       </div>
